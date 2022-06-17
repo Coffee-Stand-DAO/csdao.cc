@@ -1,0 +1,84 @@
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background-image .line {
+    width: 1px;
+    height: 142vmax;
+    position: absolute;
+    background: rgb(160, 160, 160);
+    left: 50%;
+    top: 50%;
+}
+
+.background-image > #axial-line1 {
+    transform: translateY(-50%);
+}
+.background-image > #axial-line2 {
+    transform: translateY(-50%) rotateZ(30deg);
+}
+.background-image > #axial-line3 {
+    transform: translateY(-50%) rotateZ(120deg);
+    width: 3px;
+}
+.background-image > #axial-line4 {
+    transform: translateY(-50%) rotateZ(90deg);
+}
+.background-image > #axial-line5 {
+    transform: translateY(-50%) rotateZ(105deg);
+}
+.background-image > #axial-line6 {
+    transform: translateY(-50%) rotateZ(-30deg);
+}
+.background-image > #axial-line7 {
+    transform: translateY(-50%) rotateZ(-120deg);
+    width: 3px;
+}
+.background-image > #axial-line8 {
+    transform: translateY(-50%) rotateZ(-105deg);
+}
+
+.background-image > .box {
+    border: solid 0.001px rgb(160, 160, 160);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8.66025rem;
+    height: 5rem;
+    animation-name: background-box-scaling;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.background-image > #box-line2 {
+    animation-delay: -2s;
+}
+.background-image > #box-line3 {
+    animation-delay: -4s;
+}
+.background-image > #box-line4 {
+    animation-delay: -6s;
+}
+.background-image > #box-line5 {
+    animation-delay: -8s;
+}
+.background-image > #box-line6 {
+    animation-delay: -10s;
+}
+
+@keyframes background-box-scaling {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(10);
+    }
+}

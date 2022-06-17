@@ -1,0 +1,129 @@
+:root {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(240, 248, 255);
+}
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+body > .wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.logo > img {
+    margin: auto;
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6rem;
+    position: relative;
+    z-index: 0;
+}
+
+main {
+    padding: 4rem 1.75rem 1.75rem;
+}
+
+main > .content-item {
+    margin: auto;
+}
+
+main > .content-item.c1 {
+    max-width: 30rem;
+}
+
+main > .content-item.c1 > .wrapper {
+    padding: 0 4rem 1rem;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+main > .content-item.c1 > .wrapper h1 {
+    margin: 0 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+main > .content-item .short-text {
+    line-height: 2;
+}
+
+main > .content-item .anchor-wrapper {
+    margin: 2rem 0;
+}
+
+main > .content-item .anchor-wrapper > a {
+    border-radius: 5rem;
+    border: solid 1px;
+    height: fit-content;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2.25rem;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+main > .content-item .anchor-wrapper > a.next {
+    border-radius: 50%;
+    border: none;
+    background: rgb(80, 80, 80);
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    position: relative;
+}
+
+main > .content-item .anchor-wrapper > a.next::before {
+    content: '';
+    background: rgb(240, 248, 255);
+    display: block;
+    height: 4px;
+    width: 1.5rem;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform-origin: right bottom;
+    transform: translateX(-100%) rotate(45deg);
+}
+
+main > .content-item .anchor-wrapper > a.next::after {
+    content: '';
+    background: rgb(240, 248, 255);
+    display: block;
+    height: 4px;
+    width: 1.5rem;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}
+
+hr.content-separator {
+    border: none;
+}
+
+hr.content-separator:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 8rem;
+    border-left: dotted 7px;
+    margin: auto;
+}
