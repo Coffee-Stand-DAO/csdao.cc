@@ -125,6 +125,7 @@ main > .content-item .anchor-wrapper > a.next::after {
 main > .content-item > .wrapper {
     background: #1e1e1e;
     margin: auto;
+    border-radius: 0.5rem;
 }
 
 main > .content-item.horizontal > .wrapper {

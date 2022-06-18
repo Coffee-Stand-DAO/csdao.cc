@@ -58,6 +58,12 @@
     animation-timing-function: cubic-bezier(0.55, 0.06, 1, 0);
 }
 
+@media (prefers-reduced-motion) {
+    .background-image > .box {
+        animation-play-state: paused;
+    }
+}
+
 .background-image > #box-line2 {
     animation-delay: -2s;
 }
