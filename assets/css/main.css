@@ -158,11 +158,16 @@ main > .content-item > .wrapper > .phase-desc * {
     text-align: center;
 }
 
-main > .content-item > .wrapper > .phase-desc .small-text {
+main > .content-item .small-text {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.25rem;
     font-size: 0.8rem;
+}
+
+main > .content-item a {
+    color: inherit;
+    text-decoration: none;
 }
 
 main > .content-item > .wrapper > .phase-img {
@@ -186,6 +191,59 @@ main > .content-item > .wrapper > .phase-img > .img-wrapper > img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+main > .content-item.c2 {
+    max-width: 30rem;
+}
+
+main > .content-item.c2 > .wrapper {
+    padding: 1rem 3rem 2rem;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+main > .content-item.c2 > .wrapper h2 {
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+main > .content-item.c2 > .wrapper .small-text {
+    margin: 1rem 0;
+}
+
+main > .content-item.c2 > .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+main > .content-item.c2 > .wrapper ul > li {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+
+main > .content-item.c2 > .wrapper ul.horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+main > .content-item.c2 > .wrapper ul.horizontal > li {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 0;
+    background: #515151;
+}
+
+main > .content-item.c2 > .wrapper ul.horizontal > li img {
+    margin: 0;
+    margin: 0.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 hr.content-separator {
