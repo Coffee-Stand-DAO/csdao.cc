@@ -55,7 +55,7 @@
     animation-name: background-box-scaling;
     animation-duration: 12s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.55, 0.06, 1, 0);
 }
 
 .background-image > #box-line2 {
@@ -72,6 +72,24 @@
 }
 .background-image > #box-line6 {
     animation-delay: -10s;
+}
+.background-image > #box-line7 {
+    animation-delay: -1s;
+}
+.background-image > #box-line8 {
+    animation-delay: -3s;
+}
+.background-image > #box-line9 {
+    animation-delay: -5s;
+}
+.background-image > #box-line10 {
+    animation-delay: -7s;
+}
+.background-image > #box-line11 {
+    animation-delay: -9s;
+}
+.background-image > #box-line12 {
+    animation-delay: -11s;
 }
 
 @keyframes background-box-scaling {
