@@ -122,18 +122,28 @@ main > .content-item .anchor-wrapper > a.next::after {
     transform: rotate(-45deg);
 }
 
-main > .content-item.horizontal > .wrapper {
+main > .content-item > .wrapper {
     background: #1e1e1e;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    flex-grow: 1;
-    max-width: 60rem;
     margin: auto;
-    padding: 3rem 4rem 3rem 3rem;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-desc {
+main > .content-item.horizontal > .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 60rem;
+    padding: 3rem 4rem 3rem 3rem;
+    justify-content: space-between;
+}
+
+main > .content-item.vertical > .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 30rem;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+}
+
+main > .content-item > .wrapper > .phase-desc {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -144,25 +154,25 @@ main > .content-item.horizontal:nth-of-type(2n) > .wrapper > .phase-desc {
     order: 2;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-desc * {
+main > .content-item > .wrapper > .phase-desc * {
     text-align: center;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-desc .small-text {
+main > .content-item > .wrapper > .phase-desc .small-text {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.25rem;
     font-size: 0.8rem;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-img {
+main > .content-item > .wrapper > .phase-img {
     width: 25rem;
     border-radius: 1.6rem;
     border: solid 1rem;
     margin: 1rem;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-img > .img-wrapper {
+main > .content-item > .wrapper > .phase-img > .img-wrapper {
     margin: 1rem;
     width: 23rem;
     height: 23rem;
@@ -170,7 +180,7 @@ main > .content-item.horizontal > .wrapper > .phase-img > .img-wrapper {
     position: relative;
 }
 
-main > .content-item.horizontal > .wrapper > .phase-img > .img-wrapper > img {
+main > .content-item > .wrapper > .phase-img > .img-wrapper > img {
     height: 23rem;
     position: absolute;
     top: 50%;
